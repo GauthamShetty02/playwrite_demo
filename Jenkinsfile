@@ -32,7 +32,7 @@ pipeline {
     stage('Run Tests') {
       steps {
         echo '🚀 Running Playwright test...'
-        sh 'NAUKRI_EMAIL=$NAUKRI_EMAIL NAUKRI_PASSWORD=$NAUKRI_PASSWORD npx playwright test'
+        sh 'NAUKRI_EMAIL=$NAUKRI_EMAIL NAUKRI_PASSWORD=$NAUKRI_PASSWORD npx playwright test --headed'
       }
     }
   }
