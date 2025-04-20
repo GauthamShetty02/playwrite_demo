@@ -1,11 +1,11 @@
 pipeline {
   agent any
 
-  environment {
-    // Make sure this is secure in production!
-    NAUKRI_EMAIL = credentials('naukri_email')        // Jenkins secret credential ID
-    NAUKRI_PASSWORD = credentials('naukri_password')  // Jenkins secret credential ID
-  }
+  // environment {
+  //   // Make sure this is secure in production!
+  //   NAUKRI_EMAIL = credentials('naukri_email')        // Jenkins secret credential ID
+  //   NAUKRI_PASSWORD = credentials('naukri_password')  // Jenkins secret credential ID
+  // }
 
   stages {
     stage('Checkout') {
