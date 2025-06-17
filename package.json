@@ -1,15 +1,21 @@
 {
-  "name": "playwright_demo",
+  "name": "playwrite_demo",
   "version": "1.0.0",
+  "description": "Playwright demo with MCP integration",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "start-mcp": "node mcp-playwright-server.js",
+    "run-example": "node mcp-example.js",
+    "start-git-mcp": "node mcp-git-server.js",
+    "mcp-client": "node mcp-client.js",
+    "start-vs-copilot": "node vs-copilot-mcp-server.js",
+    "vs-copilot-example": "node vs-copilot-example.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@playwright/test": "^1.51.1"
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "axios": "^1.6.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
   }
 }
